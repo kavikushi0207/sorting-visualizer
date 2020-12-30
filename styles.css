@@ -1,0 +1,44 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+#navigationBar{
+	position: sticky;
+	top: 0;
+	z-index: 10;
+
+}
+.navbar-brand img{
+	height: 80px;
+	padding-left: 30px;
+
+
+}
+h1.topic{
+	font-style: italic;
+	color:rgb(2, 0, 128);
+}
+
+.navbar-nav li{
+	padding: 0 10px;
+}
+.navbar-nav li a{
+	float: right;
+	text-align: left;
+}
+#navigationBar ul li a:hover{
+    background-color: #35d7f3!important;
+    color: aliceblue;
+}
+.navbar
+{
+	background: rgb(255, 255, 255);
+}
+.navbar-toggler {
+	border: none!important;
+}
+.nav-link{
+	color:#555!important;
+	font-weight: 600;
+	font-size: 16px;
+}

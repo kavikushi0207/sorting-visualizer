@@ -1,6 +1,52 @@
 <html>
-    <head>sorting visualizer</head>
+    <head>
+        <meta charset="utf-8">
+        <link rel="icon" href="C:\Users\Madhupa Minoli\Documents\sorting visualizer project\images\img1.png">
+        <title>Sorting Visualizer</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+	    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+	    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" ></script>
+	    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" ></script>
+	    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" ></script>
+    </head>
+	
+	
     <body>
-        <h1>hey its begining sorting vizualixzer has to begun lets huuryyy</h1>
+        <!--------------------------------------------------navigationBar--------------------------------------------------------->
+	<section id="navigationBar">
+		<nav class="navbar navbar-expand-lg navbar-light ">
+  <a class="navbar-brand" href="#"><img src="data:image/jpeg;base64,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">
+  </a>
+  <h1 class="topic">Sorting Visualizer</h1>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#">BUBBLE SORT</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">SELECTION SORT</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">INSERTION SORT</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="#">MERGE SORT</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="#">QUICK SORT</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="#">HEAP SORT</a>
+      </li>
+      
+    </ul>
+  </div>
+</nav>
+	</section>
+        
     </body>
 </html>
